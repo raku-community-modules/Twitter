@@ -1,0 +1,13 @@
+{
+    "perl"         : "6.c",
+    "name"         : "Twitter",
+    "version"      : "1.001001",
+    "description"  : "Twitter API",
+    "depends"      : [ ],
+    "test-depends" : [ "Test"],
+    "provides"     : {
+        "Twitter" : "lib/Twitter.pm6"
+    },
+    "authors"      : [ "Zoffix Znet" ],
+    "source-url"   : "git://github.com/zoffixznet/perl6-Twitter.git"
+}
