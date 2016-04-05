@@ -11,3 +11,5 @@ has Str:D $.access-token-secret is required;
 
 has $!ua = Twitter::UA.new: :$!consumer-key, :$!consumer-secret,
                             :$!access-token, :$!access-token-secret;
+
+method !ua { $!ua } # let roles use this
