@@ -3,4 +3,5 @@
 use lib 'lib';
 use Twitter;
 
-Twitter.new.post: "Just testing";
+my $t = Twitter.new: |EVALFILE 'keys';
+$t.statuses-update: "Just testing";
