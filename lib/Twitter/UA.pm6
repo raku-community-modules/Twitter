@@ -13,7 +13,3 @@ method post ($update) {
         # },
         content => 'status=test'; #"status=$update";
 }
-
-method sign ($method, $url) {
-
-}
