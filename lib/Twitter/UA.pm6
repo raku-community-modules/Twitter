@@ -3,6 +3,7 @@ unit role Twitter::UA does Twitter::OAuth;
 
 use Data::Dump;
 use HTTP::Tinyish;
+use JSON::Fast;
 use URI::Escape;
 
 has $!ua      = HTTP::Tinyish.new(agent => "Mozilla/4.0");
@@ -20,12 +21,12 @@ method request ($method, $action, %params) {
         qq{ oauth_signature_method="HMAC-SHA1", oauth_timestamp="$timestamp",},
         qq{ oauth_token="$.access-token", oauth_version="1.0"};
 
-    say $auth-header;
-
-    say $!ua."$method.lc()"(
-        # 'http://httpbin.org/post',
+    my %res = $!ua."$method.lc()"(
         $!api-url ~ $action ~ '.json',
         headers => { 'Authorization' => $auth-header },
         content => $body,
     );
+
+    %res<success> or fail "ERROR %res<status>: %res<reason>";
+    return from-json %res<content>;
 }
