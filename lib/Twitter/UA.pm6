@@ -1,7 +1,6 @@
 use Twitter::OAuth;
 unit role Twitter::UA does Twitter::OAuth;
 
-use Data::Dump;
 use HTTP::Tinyish;
 use JSON::Fast;
 use URI::Escape;

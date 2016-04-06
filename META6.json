@@ -1,9 +1,18 @@
 {
     "perl"         : "6.c",
     "name"         : "Twitter",
-    "version"      : "1.001001",
+    "version"      : "0.001001",
     "description"  : "Twitter API",
-    "depends"      : [ ],
+    "depends"      : [
+        "HTTP::Tinyish",
+        "JSON::Fast",
+        "URI::Escape",
+        "Base64",
+        "Digest::SHA",
+        "Digest::HMAC",
+        "URI",
+        "URI::Escape",
+    ],
     "test-depends" : [ "Test"],
     "provides"     : {
         "Twitter" : "lib/Twitter.pm6"
