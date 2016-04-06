@@ -11,11 +11,15 @@
         "Digest::SHA",
         "Digest::HMAC",
         "URI",
-        "URI::Escape",
+        "URI::Escape"
     ],
     "test-depends" : [ "Test"],
     "provides"     : {
-        "Twitter" : "lib/Twitter.pm6"
+        "Twitter" : "lib/Twitter.pm6",
+        "Twitter::API" : "lib/Twitter/API.pm6",
+        "Twitter::OAuth" : "lib/Twitter/OAuth.pm6",
+        "Twitter::UA" : "lib/Twitter/UA.pm6",
+        "Twitter::API::Statuses" : "lib/Twitter/API/Statuses.pm6"
     },
     "authors"      : [ "Zoffix Znet" ],
     "source-url"   : "git://github.com/zoffixznet/perl6-Twitter.git"
