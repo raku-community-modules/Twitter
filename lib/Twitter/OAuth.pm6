@@ -25,8 +25,7 @@ method !sign (
     my $timestamp = $*TEST-TWITTER-OAUTH-TIME  // time;
     my $nonce     = $*TEST-TWITTER-OAUTH-NONCE // (rand ~ $*PID ~ rand);
 
-    my %params = #$url.query-form,
-        # %query,
+    my %params =
         URI.new("?$body").query-form,
         oauth_version           => '1.0',
         oauth_consumer_key	    => $!consumer-key,

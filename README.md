@@ -69,6 +69,33 @@ Takes one mandatory positional argument: the string to tweet. At the moment,
 no length checking is done. `fail`s on failure. On success, returns decoded
 JSON returned by Twitter.
 
+## `search`
+
+```perl6
+    my @tweets = $t.search: q{"Perl 6" :)};
+```
+
+Performs a search for tweets and returns an array of hashes that represent
+results. Supports all of features listed in [Query Operators section of the API](https://dev.twitter.com/rest/public/search).
+
+Will return at most 100 results. If you need more refined control, see
+`.search-tweets` method in `Twitter::API`
+(docs are included in the module file).
+
+Sample return data:
+
+```perl6
+[
+  {
+    created_at => "Wed Apr 13 23:00:02 +0000 2016".Str,
+    text       => "\@eerie_descent Perl 6 is trying… at least. :-)".Str,
+    url        => "https://twitter.com/statuses/720386089161244672".Str,
+    user       => "\@furt1v3ly".Str,
+  },
+  ...
+]
+```
+
 ----
 
 # REPOSITORY
