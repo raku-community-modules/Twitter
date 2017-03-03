@@ -69,6 +69,17 @@ Takes one mandatory positional argument: the string to tweet. At the moment,
 no length checking is done. `fail`s on failure. On success, returns decoded
 JSON returned by Twitter.
 
+## `direct-message`
+
+```perl6
+    $t.direct-message: 'I ♥ You!', :name<Zoffix>;
+    $t.direct-message: 'I ♥ You!', :id<123684986>;
+```
+
+Takes a positional argument with the text of the direct message and sends it
+to the user identified by the `:$name` argument (user's screen name) or the
+`:$id` argument (user's ID).
+
 ## `search`
 
 ```perl6

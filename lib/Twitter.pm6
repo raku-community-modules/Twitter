@@ -1,5 +1,5 @@
 use Twitter::API;
-unit class Twitter:ver<0.002001> does Twitter::API;
+unit class Twitter does Twitter::API;
 
 method tweet  ($what) { self.statuses-update: $what;       }
 method search ($q) {

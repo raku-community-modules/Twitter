@@ -1,10 +1,12 @@
 use Twitter::UA;
 use Twitter::API::Statuses;
 use Twitter::API::Search;
+use Twitter::API::DirectMessages;
 
 unit role Twitter::API
     does Twitter::API::Statuses
-    does Twitter::API::Search;
+    does Twitter::API::Search
+    does Twitter::API::DirectMessages;
 
 has Str:D $.consumer-key        is required;
 has Str:D $.consumer-secret     is required;
