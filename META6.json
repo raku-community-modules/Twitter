@@ -1,7 +1,7 @@
 {
     "perl"         : "6.c",
     "name"         : "Twitter",
-    "version"      : "0.003001",
+    "version"      : "0.003002",
     "description"  : "Twitter API",
     "depends"      : [
         "HTTP::Tinyish",
@@ -20,7 +20,7 @@
         "Twitter::API" : "lib/Twitter/API.pm6",
         "Twitter::OAuth" : "lib/Twitter/OAuth.pm6",
         "Twitter::UA" : "lib/Twitter/UA.pm6",
-        "Twitter::API::DirectMessage" : "lib/Twitter/API/DirectMessage.pm6",
+        "Twitter::API::DirectMessages" : "lib/Twitter/API/DirectMessages.pm6",
         "Twitter::API::Statuses" : "lib/Twitter/API/Statuses.pm6",
         "Twitter::API::Search" : "lib/Twitter/API/Search.pm6"
     },
