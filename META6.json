@@ -1,6 +1,7 @@
 {
     "perl"         : "6.c",
     "name"         : "Twitter",
+    "license"      : "Artistic-2.0",
     "version"      : "0.003002",
     "description"  : "Twitter API",
     "depends"      : [
