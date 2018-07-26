@@ -7,6 +7,7 @@ use Twitter::API::AccountCredentials;
 use Twitter::API::ApplicationRateLimit;
 use Twitter::API::DMReceived;
 use Twitter::API::DMSent;
+use Twitter::API::Favorites;
 use Twitter::API::FavoritesList;
 use Twitter::API::TrendsAvailable;
 use Twitter::API::TrendsPlace;
@@ -17,6 +18,7 @@ unit role Twitter::API
     does Twitter::API::AccountCredentials
     does Twitter::API::ApplicationRateLimit
     does Twitter::API::Search
+    does Twitter::API::Favorites
     does Twitter::API::FavoritesList
     does Twitter::API::TrendsAvailable
     does Twitter::API::DMReceived

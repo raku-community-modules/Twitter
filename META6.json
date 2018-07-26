@@ -2,7 +2,7 @@
     "perl"         : "6.c",
     "name"         : "Twitter",
     "license"      : "Artistic-2.0",
-    "version"      : "0.003003",
+    "version"      : "0.004003",
     "description"  : "Twitter API",
     "depends"      : [
         "HTTP::Tinyish",
@@ -29,6 +29,7 @@
         "Twitter::API::ApplicationRateLimit": "lib/Twitter/API/ApplicationRateLimit.pm6",
         "Twitter::API::DMReceived": "lib/Twitter/API/DMReceived.pm6",
         "Twitter::API::DMSent": "lib/Twitter/API/DMSent.pm6",
+        "Twitter::API::Favorites": "lib/Twitter/API/Favorites.pm6",
         "Twitter::API::FavoritesList": "lib/Twitter/API/FavoritesList.pm6",
         "Twitter::API::TrendsAvailable": "lib/Twitter/API/TrendsAvailable.pm6",
         "Twitter::API::TrendsPlace": "lib/Twitter/API/TrendsPlace.pm6"
