@@ -26,7 +26,7 @@ method !sign (
     my $nonce     = $*TEST-TWITTER-OAUTH-NONCE // (rand ~ $*PID ~ rand);
 
     my %params =
-        URI.new("?$body").query-form,
+        URI.new("?$body").query-form.Hash,
         oauth_version           => '1.0',
         oauth_consumer_key	    => $!consumer-key,
         oauth_nonce	            => $nonce,
