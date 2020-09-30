@@ -40,6 +40,7 @@ method search-tweets (
     Int                   :$since-id,
     Int                   :$max-id,
     Bool                  :$include-entities, # API defaults this to False
+    Str                   :$tweet-mode, # "extended" will give full texts
     UNSUPPORTED           :$callback,
 ) {
     self!ua.request: 'GET', 'search/tweets', %(
@@ -53,6 +54,7 @@ method search-tweets (
         |(since_id         => $since-id         if $since-id        ),
         |(max_id           => $max-id           if $max-id          ),
         |(include_entities => $include-entities if $include-entities),
+        |(tweet_mode       => $tweet-mode       if $tweet-mode      ),
     );
 }
 
