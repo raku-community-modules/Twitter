@@ -2,7 +2,7 @@
     "perl"         : "6.c",
     "name"         : "Twitter",
     "license"      : "Artistic-2.0",
-    "version"      : "0.004003",
+    "version"      : "0.004004",
     "description"  : "Twitter API",
     "depends"      : [
         "HTTP::Tinyish",
