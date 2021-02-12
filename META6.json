@@ -35,5 +35,5 @@
         "Twitter::API::TrendsPlace": "lib/Twitter/API/TrendsPlace.pm6"
     },
     "authors"      : [ "Zoffix Znet" ],
-    "source-url"   : "git://github.com/raku-community-modules/Twitter"
+    "source-url"   : "https://github.com/raku-community-modules/Twitter.git"
 }
